@@ -36,7 +36,7 @@ class App extends React.Component {
       this.setPetData(fetch('/api/pets?type=cat'))
     } else if (this.state.filters.type === 'dog') {
       this.setPetData(fetch('/api/pets?type=dog'))
-    } else if (this.state.filters.type === 'micropig') {
+    } else {
       this.setPetData(fetch('/api/pets?type=micropig'))
     }
   }
