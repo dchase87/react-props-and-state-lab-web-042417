@@ -42,8 +42,6 @@ class App extends React.Component {
   }
 
   setPetData (data) {
-    var array = []
-    array.push(data)
     this.setState({
       pets: data
     })

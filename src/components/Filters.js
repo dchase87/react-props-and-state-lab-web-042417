@@ -1,20 +1,8 @@
 import React from 'react';
 
 class Filters extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      value: this.props.filters.type
-    }
-  }
-
   handleChange = (e) => {
-    this.setState({
-      value: e.target.value.type
-    })
     this.props.onChangeType(e.target.value)
-
   }
 
   handleClick = (e) => {
